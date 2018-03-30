@@ -1,0 +1,16 @@
+const { expect } = require('chai')
+const SemVar = require('../SemVar')
+
+describe('SemVar class', () => {
+
+    it('semantic versions can be separately accessed', () => {
+        const semvar = new SemVar('1', '2', '3', '-alpha', '+001')
+        
+        expect(semvar.getMajor()).to.equal('1')
+        expect(semvar.getMinor()).to.equal('2')
+        expect(semvar.getPatch()).to.equal('3')
+        expect(semvar.getPreRelease()).to.equal('-alpha')
+        expect(semvar.getMetadata()).to.equal('+001')
+    })
+
+})
