@@ -27,6 +27,10 @@ class SemVar {
         return new SemVar(majorString, minorString, patchString, '-' + preReleaseString, '+' + metadataString)
     }
 
+    convert() {
+        return this.major + '.' + this.minor + '.' + this.patch + this.preRelease + this.metadata
+    }
+
     getMajor() {
         return this.major
     }
