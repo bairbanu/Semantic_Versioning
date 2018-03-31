@@ -37,7 +37,7 @@ class SemVar {
         // Check patch versions of SemVar1 and SemVar2
         // If same, continue, else see which version is numerically larger and return appropriate conclusion 
         
-        // Check pre-release with the detailed specifications mention in bullet point # 9
+        // Check pre-release with the detailed specifications mention in bullet point # 9 and # 11
         // If same, note 'equal', else return appropriate conclusion
 
         // Use SHOULD clause on specification to ignore metadata information

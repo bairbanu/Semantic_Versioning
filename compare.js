@@ -10,7 +10,7 @@ const inputLinesArray = inputLinesString.split('\\n')
 for (let i = 0; i < inputLinesArray.length; i++) {
     if (inputLinesArray[i].trim() === '') continue
 
-    // Note as invalid more than two semvar strings
+    // Note as invalid if there are more than two semvar strings
     if (inputLinesArray[i].match(/\d\.\d\.\d/g).length > 2) {
         console.log('invalid')
         return 'invalid'
