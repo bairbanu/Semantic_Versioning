@@ -24,7 +24,7 @@ describe('SemVar class', () => {
         expect(semvar.getMetadata()).to.equal("+001");
     })
 
-    it('can convert from SemVar to semvar string', () => {
+    it('can convert from SemVar data type to semvar string', () => {
         const semvar = new SemVar("1", "2", "3", "-alpha", "+001")
 
         expect(semvar.convert()).to.equal("1.2.3-alpha+001")

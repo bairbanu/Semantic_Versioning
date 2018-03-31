@@ -27,6 +27,22 @@ class SemVar {
         return new SemVar(majorString, minorString, patchString, '-' + preReleaseString, '+' + metadataString)
     }
 
+    static compare(SemVar1, SemVar2) {
+        // Check major versions of SemVar1 and SemVar2
+        // If same, continue, else see which version is numerically larger and return appropriate conclusion        
+
+        // Check minor versions of SemVar1 and SemVar2
+        // If same, continue, else see which version is numerically larger and return appropriate conclusion        
+
+        // Check patch versions of SemVar1 and SemVar2
+        // If same, continue, else see which version is numerically larger and return appropriate conclusion 
+        
+        // Check pre-release with the detailed specifications mention in bullet point # 9
+        // If same, note 'equal', else return appropriate conclusion
+
+        // Use SHOULD clause on specification to ignore metadata information
+    }
+ 
     convert() {
         return this.major + '.' + this.minor + '.' + this.patch + this.preRelease + this.metadata
     }
