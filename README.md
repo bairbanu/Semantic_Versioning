@@ -12,15 +12,15 @@ const semvar = new SemVar('1', '2', '3', '-alpha', '+001')
 - where arguments are (major, minor, patch, pre-release, metadata) in strings
 - please add '-' in front of pre-release and '+' in front of metadata
 
-Methods
+#### Methods
 
 getMajor(), getMinor(), getPatch(), getPreRelease(), getMetadata()
-- these returns the related section of the semantic version
+- these return the related section of the semantic version
 
 convert()
 - converts this SemVar into its string representation
 
-Static Methods
+#### Static Methods
 
 parse(semvarString)
 - converts a semvar string into a SemVar data type
