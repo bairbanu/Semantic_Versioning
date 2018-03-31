@@ -15,7 +15,7 @@ const semvar = new SemVar('1', '2', '3', '-alpha', '+001')
 #### Methods
 
 getMajor(), getMinor(), getPatch(), getPreRelease(), getMetadata()
-- these returns the related section of the semantic version
+- these return the related section of the semantic version
 
 convert()
 - converts this SemVar into its string representation
